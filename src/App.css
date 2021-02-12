@@ -1,38 +1,118 @@
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
 .App {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.FirstComp {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Input {
+  width: 100%;
+  height: 25px;
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+
+}
+.Input:focus {
+  outline: none;
+}
+.Cancel {
+  width: 80px;
+  height: 30px;
+  background-color: rgba(255, 0, 0, 0.712);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.Cancel:hover {
+  background-color: red
+}
+
+.AddTodo {
+  width: 80px;
+  height: 30px;
+  background-color: rgba(0, 128, 0, 0.788);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.AddTodo:hover {
+  background-color: green;
+}
+
+.Cancel:focus, .AddTodo:focus {
+  outline: none;
+}
+.SecondComp {
+  width: 70%;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.Routes {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(218, 218, 218);
+  border-radius: 3px;
+  margin-bottom: 60px;
+}
+.Flex {
+  width: 180px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+.Flex .Link {
+  color: rgba(0, 0, 0, 0.63);
+}
+.Flex .Link:hover {
+  color: black;
+}
+
+.Table {
+  background-color: rgb(0, 4, 61);
+  border-collapse: collapse;
+  color: white;
+  width: 100%;
+}
+tr {
+  border: 1px solid grey;
+  height: 40px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Table button {
+  border-radius: 50%;
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  color: rgb(0, 4, 61);
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.Table button:hover {
+  background-color: rgb(180, 180, 180);
+}
+.Table button:focus {
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
