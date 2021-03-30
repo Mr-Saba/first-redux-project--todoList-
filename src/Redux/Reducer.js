@@ -12,11 +12,12 @@ const reducer = ( state = todos, action) => {
             return newTodos
         }
         case CANCEL_TODO: {
-            
+            //made with states
         } 
         case COMPLETE_TODO: {
             newTodos = [...state]
             newTodos = newTodos.filter(item => item.id !== action.payload.id )
+            console.log(newTodos)
             return [
                 ...newTodos,
                 action.payload

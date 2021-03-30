@@ -14,9 +14,12 @@ function TodoInput() {
         <div>
             <input onChange={(e) => setName(e.target.value)} className="Input" type="text" placeholder="add todo here" value={name} />
          
-            <button onClick={() => setName("")}
-            className="Cancel">Cancel</button>
+            <button 
+                onClick={() => setName("")}
+                className="Cancel">Cancel
+            </button>
             <div style={{ width: "10px", height: "auto", display: "inline-block" }}></div>
+            
             <button onClick={() => dispatch(AddTodo({
                 id: uuid(),
                 name: name,
